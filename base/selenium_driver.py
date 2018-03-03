@@ -50,7 +50,6 @@ class SeleniumDriver():
             self.log.info("Element --" + locator + "-- clicked")
         except:
             self.log.info("Cannot click --" + locator + "-- element")
-            print_stack()
 
     def sendKeys(self, data, locator, locatorType="xpath"):
         try:

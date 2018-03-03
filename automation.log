@@ -1,8 +1,120 @@
-03/03/2018 22:41:00 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
-03/03/2018 22:41:00 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
-03/03/2018 22:41:02 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
-03/03/2018 22:41:02 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
-03/03/2018 22:41:02 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
-03/03/2018 22:41:02 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
-03/03/2018 22:41:02 - LoginPage - INFO: Element --//input[@type='submit']-- Found
-03/03/2018 22:41:05 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:34:12 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+03/03/2018 23:34:12 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+03/03/2018 23:34:15 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:34:15 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:34:15 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:34:15 - LoginPage - INFO: Send data ---- to the --//input[@id='user_password']-- element
+03/03/2018 23:34:15 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:34:16 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:34:16 - LoginPage - INFO: Element --//div[@class='alert alert-danger']-- Found
+03/03/2018 23:34:16 - LoginPage - INFO: Element Found
+03/03/2018 23:34:21 - LoginPage - INFO: Element not found
+03/03/2018 23:34:21 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+03/03/2018 23:34:21 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:34:21 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:34:21 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:34:21 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+03/03/2018 23:34:21 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:34:21 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:34:26 - LoginPage - INFO: Element not found
+03/03/2018 23:34:26 - LoginPage - INFO: Element not found
+03/03/2018 23:35:38 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+03/03/2018 23:35:38 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+03/03/2018 23:35:40 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:35:40 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:35:40 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:35:40 - LoginPage - INFO: Send data ---- to the --//input[@id='user_password']-- element
+03/03/2018 23:35:40 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:35:41 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:35:41 - LoginPage - INFO: Element --//div[@class='alert alert-danger']-- Found
+03/03/2018 23:35:41 - LoginPage - INFO: Element Found
+03/03/2018 23:35:46 - LoginPage - INFO: Element not found
+03/03/2018 23:35:46 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+03/03/2018 23:35:46 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:35:46 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:35:46 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:35:46 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+03/03/2018 23:35:46 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:35:46 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:35:51 - LoginPage - INFO: Element not found
+03/03/2018 23:35:51 - LoginPage - INFO: Element not found
+03/03/2018 23:37:03 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+03/03/2018 23:37:04 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+03/03/2018 23:37:05 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:37:05 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:37:05 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:37:05 - LoginPage - INFO: Send data ---- to the --//input[@id='user_password']-- element
+03/03/2018 23:37:05 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:37:06 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:37:06 - LoginPage - INFO: Element --//div[@class='alert alert-danger']-- Found
+03/03/2018 23:37:06 - LoginPage - INFO: Element Found
+03/03/2018 23:37:11 - LoginPage - INFO: Element not found
+03/03/2018 23:37:11 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+03/03/2018 23:37:11 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:37:11 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:37:11 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:37:12 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+03/03/2018 23:37:12 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:37:12 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:37:17 - LoginPage - INFO: Element not found
+03/03/2018 23:37:17 - LoginPage - INFO: Element not found
+03/03/2018 23:38:31 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+03/03/2018 23:38:32 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+03/03/2018 23:38:33 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:38:33 - LoginPage - INFO: Send data ---- to the --//input[@id='user_email']-- element
+03/03/2018 23:38:33 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:38:33 - LoginPage - INFO: Send data ---- to the --//input[@id='user_password']-- element
+03/03/2018 23:38:33 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:38:34 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:38:34 - LoginPage - INFO: Element --//div[@class='alert alert-danger']-- Found
+03/03/2018 23:38:34 - LoginPage - INFO: Element Found
+03/03/2018 23:38:40 - LoginPage - INFO: Element not found
+03/03/2018 23:38:40 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+03/03/2018 23:38:40 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:38:40 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:38:40 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:38:41 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+03/03/2018 23:38:41 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:38:43 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:38:43 - LoginPage - INFO: Element --//a[contains(@class, 'open-my-profile-dropdown')]-- Found
+03/03/2018 23:38:43 - LoginPage - INFO: Element Found
+03/03/2018 23:41:09 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+03/03/2018 23:41:09 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+03/03/2018 23:41:11 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:41:11 - LoginPage - INFO: Send data ---- to the --//input[@id='user_email']-- element
+03/03/2018 23:41:11 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:41:11 - LoginPage - INFO: Send data ---- to the --//input[@id='user_password']-- element
+03/03/2018 23:41:11 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:41:12 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:41:12 - LoginPage - INFO: Element --//div[@class='alert alert-danger']-- Found
+03/03/2018 23:41:12 - LoginPage - INFO: Element Found
+03/03/2018 23:41:18 - LoginPage - INFO: Element not found
+03/03/2018 23:41:18 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+03/03/2018 23:41:18 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:41:18 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:41:18 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:41:18 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+03/03/2018 23:41:18 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:41:21 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:41:21 - LoginPage - INFO: Element --//a[contains(@class, 'open-my-profile-dropdown')]-- Found
+03/03/2018 23:41:21 - LoginPage - INFO: Element Found
+03/03/2018 23:42:06 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+03/03/2018 23:42:07 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+03/03/2018 23:42:08 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:42:08 - LoginPage - INFO: Send data ---- to the --//input[@id='user_email']-- element
+03/03/2018 23:42:08 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:42:08 - LoginPage - INFO: Send data ---- to the --//input[@id='user_password']-- element
+03/03/2018 23:42:08 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:42:09 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:42:09 - LoginPage - INFO: Element --//div[@class='alert alert-danger']-- Found
+03/03/2018 23:42:09 - LoginPage - INFO: Element Found
+03/03/2018 23:42:15 - LoginPage - INFO: Element not found
+03/03/2018 23:42:15 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+03/03/2018 23:42:15 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 23:42:15 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 23:42:15 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 23:42:15 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+03/03/2018 23:42:15 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 23:42:18 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+03/03/2018 23:42:18 - LoginPage - INFO: Element --//a[contains(@class, 'open-my-profile-dropdown')]-- Found
+03/03/2018 23:42:18 - LoginPage - INFO: Element Found
