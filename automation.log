@@ -1,0 +1,8 @@
+03/03/2018 22:41:00 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+03/03/2018 22:41:00 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+03/03/2018 22:41:02 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+03/03/2018 22:41:02 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+03/03/2018 22:41:02 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+03/03/2018 22:41:02 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+03/03/2018 22:41:02 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+03/03/2018 22:41:05 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
