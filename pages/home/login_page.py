@@ -14,6 +14,7 @@ class LoginPage(SeleniumDriver):
         self.driver = driver
 
     #locators
+    _page_title = "Let's Kode It"
     _login_link = "//a[@href='/sign_in']"
     _email_field = "//input[@id='user_email']"
     _password_field = "//input[@id='user_password']"
@@ -46,3 +47,9 @@ class LoginPage(SeleniumDriver):
     def verifyFailedLogin(self):
         result = self.isElementPresent(self._invalid_creds_alert)
         return result
+
+    def verifyTitle(self):
+        if self._page_title in self.getTitle():
+            return True
+        else:
+            return False
