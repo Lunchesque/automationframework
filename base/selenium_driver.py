@@ -47,31 +47,87 @@ class SeleniumDriver():
             self.log.info("Element not found")
         return element
 
-    def elementClick(self, locator, locatorType="xpath"):
+    def getElementList(self, locator, locatorType="xpath"):
+        """
+        NEW METHOD
+        Get list of elements
+        """
+        element = None
         try:
-            element = self.getElement(locator, locatorType)
+            locatorType = locatorType.lower()
+            byType = self.getByType(locatorType)
+            element = self.driver.find_elements(byType, locator)
+            self.log.info("Elements list with locator --" + locator + "-- found")
+        except:
+            self.log.info("Elements list with locator --" + locator + "-- not found")
+        return element
+
+    def elementClick(self, locator="", locatorType="xpath", element=None):
+        """
+        Click on element --> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
+
+        try:
+            if locator:     #This means if locator is not emty
+                element = self.getElement(locator, locatorType)
             element.click()
             self.log.info("Element --" + locator + "-- clicked")
         except:
             self.log.info("Cannot click --" + locator + "-- element")
+            print_stack()
 
     def sendKeys(self, data, locator, locatorType="xpath"):
+        """
+        Send keys to an element --> MODIFIED
+        Either proveide element or combination of locator and locatorType
+        """
         try:
-            element = self.getElement(locator, locatorType)
+            if locator:     #This means if locator is not emty
+                element = self.getElement(locator, locatorType)
             element.send_keys(data)
             self.log.info("Send data --" + data + "-- to the --" + locator + "-- element")
         except:
             self.log.info("Cannot send data --" + data + "-- to the --" + locator + "-- element")
             print_stack()
 
-    def isElementPresent(self, locator, locatorType="xpath"):
+    def getText(self, locator="", locatorType="xpath", element=None, info=""):
+        """
+        NEW METHOD
+        Get 'Text' on an element
+        Either provide element or a combination of locator and locatorType
+        """
         try:
-            element = self.getElement(locator, locatorType)
+            if locator: # This means if locator is not empty
+                self.log.debug("In locator condition")
+                element = self.getElement(locator, locatorType)
+            self.log.debug("Before finding text")
+            text = element.text
+            self.log.debug("After finding element, size is: " + str(len(text)))
+            if len(text) == 0:
+                text = element.get_attribute("innerText")
+            if len(text) != 0:
+                self.log.info("Getting text on element :: " +  info)
+                self.log.info("The text is  --" + text + "--")
+                text = text.strip()
+        except:
+            self.log.error("Failed to get text on element " + info)
+            print_stack()
+            text = None
+
+    def isElementPresent(self, locator, locatorType="xpath", element=None):
+        """
+        Check if element is present -> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
             if element is not None:
-                self.log.info("Element Found")
+                self.log.info("Element with locator --" + locator + "-- present")
                 return True
             else:
-                self.log.info("Element not found")
+                self.log.info("Element with locator --" + locator + "-- not present")
                 return False
         except:
             print("Element not found")
@@ -88,6 +144,26 @@ class SeleniumDriver():
                 return False
         except:
             self.log.info("Element not found")
+            return False
+
+    def isElementDisplayed(self, locator="", locatorType="xpath", element=None):
+        """
+        NEW METHOD
+        Check if element is displayed
+        Either provide element or a combination of locator and locatorType
+        """
+        isDisplayed = False
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
+            if element is not None:
+                isDisplayed = element.is_displayed()
+                self.log.info("Element --" + locator + "-- is displayed")
+            else:
+                self.log.info("Element --" + locator + "-- not displayed")
+            return isDisplayed
+        except:
+            print("Element not found")
             return False
 
     def waitForElement(self, locator, locatorType="xpath",
@@ -130,3 +206,15 @@ class SeleniumDriver():
         except NotADirectoryError:
             self.log.info("### Exception Occurred")
             print_stack()
+
+    def webScroll(self, direction="up"):
+        """
+        NEW METHOD
+        """
+        if direction == "up":
+            # Scroll Up
+            self.driver.execute_script("window.scrollBy(0, -1000);")
+
+        if direction == "down":
+            # Scroll Down
+            self.driver.execute_script("window.scrollBy(0, 1000);")

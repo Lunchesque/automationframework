@@ -1,21 +1,7 @@
 import pytest
 from selenium import webdriver
 from base.webdriverfactory import WebDriverFactory
-
-@pytest.fixture(scope="class")
-def oneTimeSetUp(request, browser, osType):
-
-    print("Running conftest demo oneTimeSetUp")
-
-    wdf = WebDriverFactory(browser)
-    driver = wdf.getWebDriverInstance()
-
-    if request.cls is not None:
-        request.cls.driver = driver
-
-    yield driver
-    driver.quit()
-    print("Running conftest demo oneTimeTearDown")
+from pages.home.login_page import LoginPage
 
 @pytest.fixture()
 def setUp():
@@ -23,6 +9,19 @@ def setUp():
     yield
     print("Running conftest demo tearDown")
 
+@pytest.fixture(scope="class")
+def oneTimeSetUp(request, browser, osType):
+    print("Running conftest demo oneTimeSetUp")
+    wdf = WebDriverFactory(browser)
+    driver = wdf.getWebDriverInstance()
+    lp = LoginPage(driver)
+    lp.login("test@email.com", "abcabc")
+
+    if request.cls is not None:
+        request.cls.driver = driver
+    yield driver
+    driver.quit()
+    print("Running conftest demo oneTimeTearDown")
 
 def pytest_addoption(parser):
     parser.addoption("--browser")
