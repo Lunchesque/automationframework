@@ -1,7 +1,7 @@
 import pytest
 import unittest
-from utilities.teststatus import StatusTest
 from selenium import webdriver
+from utilities.teststatus import StatusTest
 from pages.home.login_page import LoginPage
 
 
@@ -16,7 +16,7 @@ class LoginTests(unittest.TestCase):
     @pytest.mark.run(order=2)
     def test_valid_login(self):
         self.lp.login("test@email.com", "abcabc")
-        result1 = self.lp.verifyTitle()
+        result1 = self.lp.verifyLoginTitle()
         self.ts.mark(result1, "Title verifyed")
         result2 = self.lp.verifySeccessfulLogin()
         self.ts.markFinal("test_valid_login", result2, "Login was seccessful")

@@ -1,11 +1,11 @@
-from base.selenium_driver import SeleniumDriver
 import logging
 import utilities.custom_logger as cl
+from base.basepage import BasePage
 
 #pytest -s -v tests/home/login_test.py
 
 
-class LoginPage(SeleniumDriver):
+class LoginPage(BasePage):
 
     log = cl.customLogger(logging.DEBUG)
 
@@ -48,8 +48,5 @@ class LoginPage(SeleniumDriver):
         result = self.isElementPresent(self._invalid_creds_alert)
         return result
 
-    def verifyTitle(self):
-        if self._page_title in self.getTitle():
-            return True
-        else:
-            return False
+    def verifyLoginTitle(self):
+        return self.verifyPageTitle(self._page_title)
