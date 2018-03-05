@@ -21,3 +21,27 @@
 05/03/2018 13:03:53 - LoginPage - INFO: Element Found
 05/03/2018 13:03:53 - StatusTest - INFO: ### VERIFICATION SECCESSFUL :: Login was seccessful
 05/03/2018 13:03:53 - StatusTest - ERROR: test_valid_login### TEST FAILED
+05/03/2018 13:30:56 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+05/03/2018 13:30:56 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+05/03/2018 13:30:57 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+05/03/2018 13:30:57 - LoginPage - INFO: Send data ---- to the --//input[@id='user_email']-- element
+05/03/2018 13:30:57 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+05/03/2018 13:30:57 - LoginPage - INFO: Send data ---- to the --//input[@id='user_password']-- element
+05/03/2018 13:30:57 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+05/03/2018 13:30:58 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+05/03/2018 13:30:58 - LoginPage - INFO: Element --//div[@class='alert alert-danger']-- Found
+05/03/2018 13:30:58 - LoginPage - INFO: Element Found
+05/03/2018 13:31:03 - LoginPage - INFO: Element not found
+05/03/2018 13:31:03 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+05/03/2018 13:31:03 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+05/03/2018 13:31:03 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+05/03/2018 13:31:03 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+05/03/2018 13:31:03 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+05/03/2018 13:31:03 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+05/03/2018 13:31:08 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+05/03/2018 13:31:08 - StatusTest - INFO: ### VERIFICATION FAILED :: Title verifyed
+05/03/2018 13:31:08 - StatusTest - INFO: Screenshot saved --> /home/sergey/automationframework/base/../screenshots/Title verifyed 2018.03.05 13:31:08.png
+05/03/2018 13:31:08 - LoginPage - INFO: Element --//a[contains(@class, 'open-my-profile-dropdown')]-- Found
+05/03/2018 13:31:08 - LoginPage - INFO: Element Found
+05/03/2018 13:31:08 - StatusTest - INFO: ### VERIFICATION SECCESSFUL :: Login was seccessful
+05/03/2018 13:31:08 - StatusTest - ERROR: test_valid_login### TEST FAILED

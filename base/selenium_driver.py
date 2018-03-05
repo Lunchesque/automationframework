@@ -1,3 +1,4 @@
+import os
 import logging
 from datetime import datetime
 from traceback import print_stack
@@ -89,7 +90,6 @@ class SeleniumDriver():
             self.log.info("Element not found")
             return False
 
-
     def waitForElement(self, locator, locatorType="xpath",
                        timeout=10, pollFrequency=0.5):
         element = None
@@ -113,15 +113,20 @@ class SeleniumDriver():
 
         return element
 
-
-    def takeScreenshot(self, driver):
+    def screenShot(self, resultMessage):
         time = datetime.strftime(datetime.now(), "%Y.%m.%d %H:%M:%S")
-        fileName = time + ".png"
-        screenshotDirectory = "/home/sergey/Desktop/"
-        destinationFile = screenshotDirectory + fileName
+        fileName = resultMessage + " " + time + ".png"
+        screenshotDirectory = "../screenshots/"
+        currentDirectory = os.path.dirname(__file__)
+        relativeFileName = screenshotDirectory + fileName
+        destinationFile = os.path.join(currentDirectory, relativeFileName)
+        destinationDirectory = os.path.join(currentDirectory, screenshotDirectory)
 
         try:
-            driver.save_screenshot(destinationFile)
+            if not os.path.exists(destinationDirectory):
+                os.makedirs(destinationDirectory)
+            self.driver.save_screenshot(destinationFile)
             self.log.info("Screenshot saved --> " + destinationFile)
         except NotADirectoryError:
-            self.log.info("Not a directory issue")
+            self.log.info("### Exception Occurred")
+            print_stack()

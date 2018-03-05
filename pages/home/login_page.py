@@ -14,7 +14,7 @@ class LoginPage(SeleniumDriver):
         self.driver = driver
 
     #locators
-    _page_title = "Let's Kode It"
+    _page_title = "google"
     _login_link = "//a[@href='/sign_in']"
     _email_field = "//input[@id='user_email']"
     _password_field = "//input[@id='user_password']"
