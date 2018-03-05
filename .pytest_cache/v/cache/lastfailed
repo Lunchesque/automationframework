@@ -1,4 +1,4 @@
 {
   "pages/home/login_page.py": true,
-  "tests/home/login_test.py::LoginTests::test_valid_login": true
+  "tests/home/login_test.py::LoginTests::test_invalid_login": true
 }

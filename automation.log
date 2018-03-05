@@ -14,3 +14,65 @@
 05/03/2018 16:32:16 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
 05/03/2018 16:32:16 - LoginPage - INFO: Element --//input[@type='submit']-- Found
 05/03/2018 16:32:18 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+05/03/2018 16:50:03 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+05/03/2018 16:50:03 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+05/03/2018 16:50:05 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+05/03/2018 16:50:06 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+05/03/2018 16:50:06 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+05/03/2018 16:50:06 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+05/03/2018 16:50:06 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+05/03/2018 16:50:08 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+05/03/2018 16:50:13 - LoginPage - INFO: Element not found
+05/03/2018 16:50:13 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+05/03/2018 16:50:18 - LoginPage - INFO: Element not found
+05/03/2018 16:50:18 - LoginPage - INFO: Cannot send data ---- to the --//input[@id='user_email']-- element
+05/03/2018 16:50:20 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+05/03/2018 16:50:20 - LoginPage - INFO: Cannot send data ---- to the --//input[@id='user_password']-- element
+05/03/2018 16:50:20 - LoginPage - INFO: Element not found
+05/03/2018 16:50:20 - LoginPage - INFO: Cannot click --//input[@type='submit']-- element
+05/03/2018 16:50:20 - LoginPage - INFO: Element not found
+05/03/2018 16:50:20 - LoginPage - INFO: Element with locator --//div[@class='alert alert-danger']-- not present
+05/03/2018 16:50:20 - LoginPage - INFO: Element not found
+05/03/2018 16:50:20 - LoginPage - INFO: Cannot click --//a[@href='/sign_in']-- element
+05/03/2018 16:50:20 - LoginPage - INFO: Element not found
+05/03/2018 16:50:20 - LoginPage - INFO: Cannot send data --test@email.com-- to the --//input[@id='user_email']-- element
+05/03/2018 16:50:20 - LoginPage - INFO: Element not found
+05/03/2018 16:50:20 - LoginPage - INFO: Cannot send data --abcabc-- to the --//input[@id='user_password']-- element
+05/03/2018 16:50:20 - LoginPage - INFO: Element not found
+05/03/2018 16:50:20 - LoginPage - INFO: Cannot click --//input[@type='submit']-- element
+05/03/2018 16:50:20 - LoginPage - ERROR: Failed to get page title
+05/03/2018 16:50:20 - StatusTest - INFO: ### VERIFICATION FAILED :: Title verifyed
+05/03/2018 16:50:20 - StatusTest - ERROR: ### Exception Occurred!!!
+05/03/2018 16:51:02 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+05/03/2018 16:51:02 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+05/03/2018 16:51:06 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+05/03/2018 16:51:06 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+05/03/2018 16:51:06 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+05/03/2018 16:51:06 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+05/03/2018 16:51:06 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+05/03/2018 16:51:10 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+05/03/2018 16:51:10 - Util - INFO: Actual Text From Application Web UI --> Let's Kode It
+05/03/2018 16:51:10 - Util - INFO: Expected Text From Application Web UI --> google
+05/03/2018 16:51:10 - Util - INFO: ### VERIFICATION DOES NOT CONTAINS!!!
+05/03/2018 16:51:10 - StatusTest - INFO: ### VERIFICATION FAILED :: Title verifyed
+05/03/2018 16:51:10 - StatusTest - INFO: Screenshot saved --> /home/sergey/automationframework/base/../screenshots/Title verifyed 2018.03.05 16:51:10.png
+05/03/2018 16:51:10 - LoginPage - INFO: Element --//a[contains(@class, 'open-my-profile-dropdown')]-- Found
+05/03/2018 16:51:10 - LoginPage - INFO: Element with locator --//a[contains(@class, 'open-my-profile-dropdown')]-- present
+05/03/2018 16:51:10 - StatusTest - INFO: ### VERIFICATION SECCESSFUL :: Login was seccessful
+05/03/2018 16:51:10 - StatusTest - ERROR: test_valid_login### TEST FAILED
+05/03/2018 16:53:11 - LoginPage - INFO: Element --//a[@href='/sign_in']-- Found
+05/03/2018 16:53:11 - LoginPage - INFO: Element --//a[@href='/sign_in']-- clicked
+05/03/2018 16:53:17 - LoginPage - INFO: Element --//input[@id='user_email']-- Found
+05/03/2018 16:53:17 - LoginPage - INFO: Send data --test@email.com-- to the --//input[@id='user_email']-- element
+05/03/2018 16:53:17 - LoginPage - INFO: Element --//input[@id='user_password']-- Found
+05/03/2018 16:53:17 - LoginPage - INFO: Send data --abcabc-- to the --//input[@id='user_password']-- element
+05/03/2018 16:53:17 - LoginPage - INFO: Element --//input[@type='submit']-- Found
+05/03/2018 16:53:19 - LoginPage - INFO: Element --//input[@type='submit']-- clicked
+05/03/2018 16:53:19 - Util - INFO: Actual Text From Application Web UI --> Let's Kode It
+05/03/2018 16:53:19 - Util - INFO: Expected Text From Application Web UI --> Let's Kode It
+05/03/2018 16:53:19 - Util - INFO: ### VERIFICATION CONTAINS!!!
+05/03/2018 16:53:19 - StatusTest - INFO: ### VERIFICATION SECCESSFUL :: Title verifyed
+05/03/2018 16:53:19 - LoginPage - INFO: Element --//a[contains(@class, 'open-my-profile-dropdown')]-- Found
+05/03/2018 16:53:19 - LoginPage - INFO: Element with locator --//a[contains(@class, 'open-my-profile-dropdown')]-- present
+05/03/2018 16:53:19 - StatusTest - INFO: ### VERIFICATION SECCESSFUL :: Login was seccessful
+05/03/2018 16:53:19 - StatusTest - INFO: test_valid_login### TEST SECCESSFUL
