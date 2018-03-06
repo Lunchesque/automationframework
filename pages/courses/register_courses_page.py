@@ -25,7 +25,7 @@ class RegistreCoursePage(BasePage):
     _ccv_field = "//div[@id='root']/form//input[@name='cvc']"
     _back_to_saved_card = "//div[@class='cc__back-to-existing']"
     _submit_enroll_btn = "//button[@id='confirm-purchase']"
-    _url_to_verify = "https://sso.teachable.com/secure/42299/checkout/342639/complete-javascript-guide"
+    _element_to_verify = "//li[contains(text(),'Complete Purchase')]"
 
 
     def enterCourseName(self, courseName):
@@ -84,5 +84,5 @@ class RegistreCoursePage(BasePage):
         self.submitEnroll()
 
     def verifyNotEnroll(self):
-        result = self.getCurrentUrl()
-        return result == self._url_to_verify
+        result = self.elementPresenceCheck(self._element_to_verify)
+        return result

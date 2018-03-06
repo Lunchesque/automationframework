@@ -152,9 +152,9 @@ class SeleniumDriver():
             print("Element not found")
             return False
 
-    def elementPresenceCheck(self, locator, byType):
+    def elementPresenceCheck(self, locator, locatorType="xpath"):
         try:
-            elementList = self.driver.find_elements(byType, locator)
+            elementList = self.getElementList(locator, locatorType)
             if len(elementList) > 0:
                 self.log.info("Element Found")
                 return True
