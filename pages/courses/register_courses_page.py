@@ -40,9 +40,6 @@ class RegistreCoursePage(BasePage):
     def enrollBtnClick(self):
         self.elementClick(self._enroll_btn)
 
-    def scrollDown(self, direction):
-        self.webScroll(direction)
-
     def anotherCardBtn(self):
         self.elementClick(self._another_card_btn)
 
@@ -72,12 +69,12 @@ class RegistreCoursePage(BasePage):
     def submitEnroll(self):
         self.elementClick(self._submit_enroll_btn)
 
-    def enrollCourse(self, courseName="", direction="", cardnumber="", date="", cvv=""):
+    def enrollCourse(self, courseName="", cardnumber="", date="", cvv=""):
         self.enterCourseName(courseName)
         self.searchCourse()
         self.clickCourseBanner()
         self.enrollBtnClick()
-        self.scrollDown(direction)
+        self.webScroll(direction='down')
         self.anotherCardBtn()
         self.enterCardCreds(cardnumber, date, cvv)
         self.backToSavedCArd()
