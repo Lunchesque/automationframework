@@ -1,8 +1,9 @@
 import pytest, unittest
 from ddt import ddt, data, unpack
-from utilities.teststatus import StatusTest
-from pages.courses.register_courses_page import RegistreCoursePage
 from utilities.read_data import getCSVData
+from utilities.teststatus import StatusTest
+from pages.home.navigation_page import NavigationPage
+from pages.courses.register_courses_page import RegistreCoursePage
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
@@ -13,9 +14,10 @@ class RegistreCoursesCSVDataTests(unittest.TestCase):
     def classSetup(self, oneTimeSetUp):
         self.courses = RegistreCoursePage(self.driver)
         self.ts = StatusTest(self.driver)
+        self.nav = NavigationPage(self.driver)
 
     def setUp(self):
-        self.goToAllCoursesPage()
+        self.nav.navigateToAllCourses
 
     @pytest.mark.run(order=1)
     @data(*getCSVData("testdata.csv"))
