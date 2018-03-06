@@ -64,6 +64,10 @@ class RegistreCoursePage(BasePage):
     def submitEnroll(self):
         self.elementClick(self._submit_enroll_btn)
 
+    def goToAllCoursesPage(self):
+        self.driver.back()
+        self.driver.find_element_by_link_text("All Courses").click()
+
     def searchForCourse(self, courseName=""):
         self.enterCourseName(courseName)
         self.searchCourse()
