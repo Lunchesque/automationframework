@@ -18,6 +18,9 @@ class SeleniumDriver():
     def getTitle(self):
         return self.driver.title
 
+    def getCurrentUrl(self):
+        return self.driver.current_url
+
     def getByType(self, locatorType):
         locatorType = locatorType.lower()
         if locatorType == "id":
@@ -75,6 +78,22 @@ class SeleniumDriver():
             self.log.info("Element --" + locator + "-- clicked")
         except:
             self.log.info("Cannot click --" + locator + "-- element")
+            print_stack()
+
+    def iframeSwitch(self, name):
+        try:
+            self.driver.switch_to.frame(name)
+            self.log.info("Seccessfully switched to --" + name + "-- IFrame")
+        except:
+            self.log.info("Cannot swith to --" + name + "-- IFrame")
+            print_stack()
+
+    def switchParentPage(self):
+        try:
+            self.driver.switch_to.default_content()
+            self.log.info("Seccessfully switched to default page")
+        except:
+            self.log.info("Cannot swith to default page")
             print_stack()
 
     def sendKeys(self, data, locator, locatorType="xpath"):
@@ -207,7 +226,7 @@ class SeleniumDriver():
             self.log.info("### Exception Occurred")
             print_stack()
 
-    def webScroll(self, direction="up"):
+    def webScroll(self, direction="down"):
         """
         NEW METHOD
         """
