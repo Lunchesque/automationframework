@@ -1,6 +1,8 @@
 import logging
 import utilities.custom_logger as cl
 from base.basepage import BasePage
+from pages.home.navigation_page import NavigationPage
+import time
 
 #pytest -s -v tests/home/login_test.py
 
@@ -12,6 +14,7 @@ class LoginPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+        self.nav = NavigationPage(driver)
 
     #locators
     _page_title = "Let's Kode It"
@@ -21,6 +24,7 @@ class LoginPage(BasePage):
     _login_btn = "//input[@type='submit']"
     _user_settings = "//a[contains(@class, 'open-my-profile-dropdown')]"
     _invalid_creds_alert = "//div[@class='alert alert-danger']"
+    _logout_btn = "//a[@href='/sign_out']"
 
     def clickLoginLink(self):
         self.elementClick(self._login_link)
@@ -50,3 +54,8 @@ class LoginPage(BasePage):
 
     def verifyLoginTitle(self):
         return self.verifyPageTitle(self._page_title)
+
+    def logout(self):
+        self.nav.openUserSettings()
+        time.sleep(1)
+        self.elementClick(self._logout_btn)

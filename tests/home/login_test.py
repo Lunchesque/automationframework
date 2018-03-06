@@ -23,6 +23,7 @@ class LoginTests(unittest.TestCase):
 
     @pytest.mark.run(order=1)
     def test_invalid_login(self):
+        self.lp.logout()
         self.lp.login()
         result = self.lp.verifyFailedLogin()
         assert result == True
