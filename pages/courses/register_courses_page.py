@@ -58,26 +58,29 @@ class RegistreCoursePage(BasePage):
         self.sendKeys(cvv, self._ccv_field)
         self.switchParentPage()
 
-    def enterCardCreds(self, cardnumber, date, cvv):
-        self.enterCardNumber(cardnumber)
-        self.enterExpirationDate(date)
-        self.enterCVV(cvv)
-
-    def backToSavedCArd(self):
+    def backToSavedCard(self):
         self.elementClick(self._back_to_saved_card)
 
     def submitEnroll(self):
         self.elementClick(self._submit_enroll_btn)
 
-    def enrollCourse(self, courseName="", cardnumber="", date="", cvv=""):
+    def searchForCourse(self, courseName=""):
         self.enterCourseName(courseName)
         self.searchCourse()
         self.clickCourseBanner()
+
+    def goToEnrollPage(self):
         self.enrollBtnClick()
         self.webScroll(direction='down')
         self.anotherCardBtn()
-        self.enterCardCreds(cardnumber, date, cvv)
-        self.backToSavedCArd()
+
+    def enterCardCreds(self,cardnumber="", date="", cvv=""):
+        self.enterCardNumber(cardnumber)
+        self.enterExpirationDate(date)
+        self.enterCVV(cvv)
+
+    def enrollCourse(self):
+        self.backToSavedCard()
         self.submitEnroll()
 
     def verifyNotEnroll(self):

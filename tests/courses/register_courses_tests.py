@@ -12,6 +12,10 @@ class RegisterCoursesTest(unittest.TestCase):
 
     @pytest.mark.run(order=1)
     def test_invalidEnrollment(self):
-        self.courses.enrollCourse(courseName="JavaScript", cardnumber="1234123412341234",
-                                    date="1212", cvv="123")
-        assert self.courses.verifyNotEnroll() == True
+        self.courses.searchForCourse(courseName="JavaScript")
+        self.courses.goToEnrollPage()
+        self.courses.enterCardCreds(cardnumber="1234123412341234", date="1212", cvv="123")
+        self.courses.enrollCourse()
+        result = self.courses.verifyNotEnroll()
+        assert result == True
+        self.ts.markFinal("test_invalidEnrollment", result, "Enrollment verifycation failed")
