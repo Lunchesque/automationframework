@@ -17,7 +17,7 @@ class RegistreCoursesCSVDataTests(unittest.TestCase):
         self.nav = NavigationPage(self.driver)
 
     def setUp(self):
-        self.nav.navigateToAllCourses
+        self.nav.navigateToAllCourses()
 
     @pytest.mark.run(order=1)
     @data(*getCSVData("testdata.csv"))

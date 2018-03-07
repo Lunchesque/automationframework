@@ -1,7 +1,6 @@
 import logging
 import utilities.custom_logger as cl
 from base.basepage import BasePage
-import time
 
 class RegistreCoursePage(BasePage):
 
@@ -83,6 +82,8 @@ class RegistreCoursePage(BasePage):
         self.backToSavedCard()
         self.submitEnroll()
 
+
     def verifyNotEnroll(self):
         result = self.elementPresenceCheck(self._element_to_verify)
+        self.back()
         return result

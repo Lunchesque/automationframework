@@ -15,6 +15,9 @@ class SeleniumDriver():
     def __init__(self, driver):
         self.driver = driver
 
+    def back(self):
+        return self.driver.back()
+
     def getTitle(self):
         return self.driver.title
 
