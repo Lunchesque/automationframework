@@ -13,6 +13,7 @@ class RegisterCoursesTest(unittest.TestCase):
         self.courses = RegistreCoursePage(self.driver)
         self.ts = StatusTest(self.driver)
 
+    @pytest.mark.skip(reason="no way of currently testing this")
     @pytest.mark.run(order=1)
     @data(("JavaScript", "1234123412341234", "1212", "123"), ("Learn Python 3 from scratch", "20", "1212", "123"))
     @unpack
